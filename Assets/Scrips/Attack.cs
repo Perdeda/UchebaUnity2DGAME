@@ -26,7 +26,7 @@ public class Attack : MonoBehaviour
             {
                 anim.SetBool("IsAttackingR", true);
                 anim.SetBool("IsWalkingR", true);
-                anim.SetBool("IsWalkingR", true);
+                //anim.SetBool("IsWalkingR", true);
                 timebtwAttack = atkSpeed;
                 Collider2D[] damageEnemies = Physics2D.OverlapCircleAll(attackPos.position, attackRange, WhatIsEnemy);
                 for (int i = 0; i < damageEnemies.Length; i++)
